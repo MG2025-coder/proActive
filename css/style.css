@@ -413,16 +413,18 @@ footer a:hover {
   
 
   .card-container {
-    width: 100%;
-    max-width: 600px;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    max-width: 600px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     position: relative;
     aspect-ratio: 16 / 9;
+    cursor: pointer;
   }
+  
 
   .card-image {
     width: 100%;
@@ -501,3 +503,69 @@ footer a:hover {
     cursor: pointer;
 }
 /* PRUEBA */
+
+/* AGREGANDO PARA QUE LAS CARDS SEAN RESPONSIVAS */
+.especialistas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en laptop */
+    gap: 20px;
+    justify-items: center; /* Centra cada card horizontalmente */
+  }
+
+  @media (max-width: 992px) {
+    .especialistas-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .especialistas-grid {
+      grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+  }
+  .card {
+    width: 100%;
+    max-width: 350px; /* Tamaño máximo en pantallas grandes */
+    height: auto;
+  }
+    
+/* AGREGANDO PARA QUE LAS CARDS SEAN RESPONSIVAS */
+
+/* CARDS DE SERVICIO RESPONSIVE */
+/* Ocultar info-card por defecto */
+.hidden {
+    display: none;
+  }
+  
+  /* Mostrar solo en móviles */
+  @media (max-width: 768px) {
+    .mobile-only {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* En pantallas grandes, ocultar siempre */
+  @media (min-width: 769px) {
+    .mobile-only {
+      display: none !important;
+    }
+  }
+  
+  .info-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+    
+  .hidden {
+    display: none !important;
+}
+
+
+/* FIN CARDS DE SERVICIO RESPONSIVE */

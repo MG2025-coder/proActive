@@ -1,3 +1,4 @@
+// Lógica para mostrar secciones al hacer scroll
 const sections = document.querySelectorAll('.section');
 
 const showOnScroll = () => {
@@ -16,7 +17,7 @@ const showOnScroll = () => {
 window.addEventListener('scroll', showOnScroll);
 window.addEventListener('load', showOnScroll);
 
-// ESTILO NAV
+// Estilo del Navbar al hacer scroll
 window.addEventListener("scroll", function () {
     const navbar = document.getElementById("mainNavbar");
     if (window.scrollY > 50) {
@@ -24,15 +25,12 @@ window.addEventListener("scroll", function () {
     } else {
       navbar.classList.remove("scrolled");
     }
-  });
+});
 
-  
-// PRUEBA
-
-
+// Lógica para mostrar información del servicio al hacer clic
 document.querySelectorAll('.card-container').forEach(card => {
     card.addEventListener('click', () => {
-        // Oculta todas las tarjetas de info primero
+        // Oculta todas las tarjetas de información primero
         document.querySelectorAll('.info-card').forEach(info => {
             info.classList.add('hidden');
         });
@@ -42,9 +40,19 @@ document.querySelectorAll('.card-container').forEach(card => {
         const infoCard = document.getElementById('info-' + key);
         if (infoCard) {
             infoCard.classList.remove('hidden');    
-            
         }
+
+        // Llama a la función toggleMobileInfo para dispositivos móviles
+        toggleMobileInfo(card);
     });
 });
 
-
+// Función para mostrar/ocultar información en dispositivos móviles
+function toggleMobileInfo(card) {
+    if (window.innerWidth <= 768) { // solo en móviles
+        const next = card.nextElementSibling; // La siguiente tarjeta de info
+        if (next && next.classList.contains('info-card')) {
+            next.classList.toggle('hidden'); // Cambia la visibilidad
+        }
+    }
+}
