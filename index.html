@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProActive+</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@200&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- <header class="header">
+        <h1>ProActive+</h1>
+    </header> -->
+
+    <!-- INICIO NAVBAR -->
+     <!-- Navbar -->
+     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">ProActive+</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#especialistas" class="nav-link">Especialistas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIN NAVBAR -->
+
+    <!-- INICIO CARRUSEL -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/proactive01.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/trauma2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/preso.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    <!-- FIN CARRUSEL -->
+<!-- INICIO QUIENES SOMOS -->
+    <section class="section " id="quienes">
+        <h2>Quienes somos</h2>  
+        <p>
+            Somos un centro de terapia física integral que ofrece servicios de medicina física, nutrición y terapia física con un enfoque interdisciplinario, orientado tanto a deportistas como a personas con dolencias musculoesqueléticas y traumatológicas.
+        </p>
+        <br>
+        <p>
+            Nuestra misión es optimizar la recuperación y el rendimiento físico a través de un abordaje profesional y humano, combinando innovación, compromiso y excelencia en cada tratamiento.
+        </p>
+
+    </section>
+<!-- FIN  QUIENES SOMOS -->
+
+<!-- INICIO SERVICIOS -->
+<section class="section" id="servicios">
+    <h2>Servicios</h2>
+
+    <!-- FILA: Fisioterapia -->
+    <div class="service-row">
+        <div class="card-container" data-service="fisio">
+            <img src="images/fisio.jpg" alt="Imagen" class="card-image">
+            <div class="card-overlay">FISIOTERAPIA</div>
+        </div>
+        <div class="info-card hidden" id="info-fisio">
+            <h3>Fisioterapia</h3>
+            <p>La terapia física mejora la movilidad, reduce
+                el dolor y recupera funciones físicas
+                mediante ejercicios personalizados y el uso
+                de equipos especializados. </p>
+        </div>
+    </div>
+
+    <!-- FILA: Nutrición -->
+    <div class="service-row">
+        <div class="card-container" data-service="nutricion">
+            <img src="images/nutricion.jpg" alt="Imagen" class="card-image">
+            <div class="card-overlay">NUTRICIÓN</div>
+        </div>
+        <div class="info-card hidden" id="info-nutricion">
+            <h3>Nutrición</h3>
+            <p>La nutrición adecuada es clave para mantener un estilo de
+                vida saludable y alcanzar tus objetivos de bienestar. 
+                
+                
+                
+                Nuestros servicios de nutrición se enfocan en ofrecerte
+                planes alimenticios personalizados, diseñados para
+                mejorar tu salud, optimizar tu rendimiento físico y apoyar
+                en procesos de recuperación. </p>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="card-container" data-service="rehab">
+            <img src="images/rehab.jpg" alt="Imagen" class="card-image">
+            <div class="card-overlay">MEDICINA FÍSICA Y REHABILITACIÓN</div>
+        </div>
+        <div class="info-card hidden" id="info-rehab">
+            <h3>Medicina Física y Rehabilitación</h3>
+            <p>Con experiencia y enfoque personalizado, ofrecemos
+                soluciones efectivas para pacientes que necesitan
+                intervenciones especializadas para mejorar su calidad de
+                vida y bienestar físico. </p>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="card-container" data-service="crio">
+            <img src="images/crio.JPG" alt="Imagen" class="card-image">
+            <div class="card-overlay">CRIOTERAPIA</div>
+        </div>
+        <div class="info-card hidden" id="info-crio">
+            <h3>Crioterapia</h3>
+            <p>Es un tratamiento de recuperación que utiliza frío controlado para reducir la inflamación, aliviar el dolor y acelerar la recuperación muscular. 
+
+
+
+                Es ideal para deportistas, ya que ayuda a disminuir la fatiga, prevenir lesiones y optimizar el rendimiento físico. Perfecta para una recuperación rápida y efectiva después del ejercicio intenso. </p>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+<!-- FIN SERVICIOS -->
+    <!-- <section class="section hidden" id="servicios">
+        <h2>Servicios</h2>
+
+
+        <div class=" mt-5 mb-5">
+            <div class="card-container">
+                <img src="images/fisio.jpg" alt="Imagen" class="card-image">
+                <div class="card-overlay">
+                    FISIOTERAPIA
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="card-container">
+                <img src="images/nutricion.jpg" alt="Imagen" class="card-image">
+                <div class="card-overlay">
+                    NUTRICIÓN
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="mb-5">
+            <div class="card-container">
+                <img src="images/rehab.jpg" alt="Imagen" class="card-image">
+                <div class="card-overlay">
+                    MEDICINA FÍSICA Y REHABILITACIÓN
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="card-container">
+                <img src="images/traumatologia.jpg" alt="Imagen" class="card-image">
+                <div class="card-overlay">
+                    TRAUMATOLOGÍA
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="card-container">
+                <img src="images/crio.JPG" alt="Imagen" class="card-image">
+                <div class="card-overlay">
+                    CRIOTERAPIA
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    </section> -->
+
+    <!-- INICIO SECCION ESPECIALISTAS -->
+    <!-- Sección de Especialistas -->
+
+
+
+    <section class="section " id="especialistas">
+        <h2>Especialistas</h2>
+        <p>Contamos con un equipo altamente calificado para tu bienestar.</p>
+
+
+
+
+
+        <div class="especialistas-grid mt-5">
+            <div class="card mb-5">
+                <img id="img_especialista" src="images/fisiatra1r.jpg" class="img-fluid" alt="...">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Dra. Esteffany Calongos Porras</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="estef.html" class="btn btn-outline-primary">Fisiatra</a>
+                </div>
+            </div>
+
+            <div class="card mb-5">
+                <img src="images/bengoar.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Aitor Bengoa Dominguez</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="bengoa.html" class="btn btn-outline-primary">Nutricionista deportivo</a>
+                </div>
+            </div>
+
+            <div class="card mb-5">
+                <img src="images/leor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lic. Leonardo Melgarejo Soto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="leo.html" class="btn btn-outline-primary">Fisioterapeuta</a>
+                </div>
+            </div>
+
+            <div class="card mb-5">
+                <img src="images/nutri2.1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Yurico Padilla Ling</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="bengoa.html" class="btn btn-outline-primary">Nutricionista</a>
+                </div>
+            </div>
+
+            <!-- Puedes agregar más tarjetas aquí -->
+        </div>
+    </section>
+    </section>
+    <!-- FIN SECCION ESPECIALISTAS -->
+
+
+
+    <section class="section " id="contacto">
+        <h2>Contacto</h2>
+        <p>Escríbenos para agendar una cita o resolver tus dudas.</p>
+        <section class="row">
+            <div class="contact-info">
+                <p><strong>Celular:</strong></p>
+                <p> <a href="tel:+51 961 798 832">+51 961 798 832</a></p>
+
+            </div>
+
+            <div class="contact-info">
+                <p><strong>Correo:</strong></p>
+
+                <p> <a href="proactive.tf@gmail.com">proactive.tf@gmail.com</a></p>
+
+            </div>
+
+            <div class="contact-info">
+                <p><strong>Instagram:</strong></p>
+
+                <p> <a href="https://www.instagram.com/proactiveplus.tf?igsh=dTUzbTV3Z3ptcDd5"
+                        target="_blank">@proactiveplus.tf</a></p>
+            </div>
+        </section>
+    </section>
+
+
+
+    <!-- Ícono de WhatsApp -->
+    <a href="https://wa.me/51961798832?text=Hola%20me%20gustaría%20hacer%20una%20consulta%20sobre%20sus%20servicios."
+        class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+
+
+
+    <script src="js/scrypt.js"></script>
+</body>
+
+<!-- INICIO FOOTER -->
+<footer class=" text-white py-4">
+
+
+    <div class="row">
+        <div class="col-md-12 mt-4 text-center">
+
+            <i class="bi bi-geo-alt"></i> <!-- Ícono de ubicación de Bootstrap -->
+
+            <a
+                href="https://www.google.com/maps/place/Policl%C3%ADnico+San+Isidro/@-12.0892684,-77.009487,19z/data=!4m6!3m5!1s0x9105c7fa47ca2fe9:0xff17a96dceef8db!8m2!3d-12.0892682!4d-77.009104!16s%2Fg%2F11qngz4970?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D">Av.
+                Javier Prado Este 1684, San Isidro 15036</a>
+            <p></p>
+        </div>
+    </div>
+    </div>
+</footer>
+<!-- FIN FOOTER -->
+
+</html>

@@ -1,0 +1,503 @@
+/* INICIO ESTILO NAVBAR */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.4s ease;
+    background-color: #424e3e;  /* Color de fondo fijo */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;               /* Asegura que esté encima del contenido */
+    display: flex;
+    justify-content: center;    /* Centra horizontalmente los elementos */
+  }
+  
+  
+  #mainNavbar .nav-link {
+    color: white;
+  }
+  
+  #mainNavbar .nav-link:hover {
+    color: #aea196;
+  }
+  
+  #mainNavbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    
+  }
+  
+  .navbar.scrolled {
+    background: #d2d7df;
+    
+    
+  }
+
+/* FIN ESTILO NAVBAR */
+
+
+/* Variables de color */
+:root {
+    --azul: #39557b;
+    --gris-claro: #d2d7df;
+    --verde-oscuro: #424e3e;
+    --gris-verde: #c5cbc3;
+    --beige: #aea196;
+    --fondo: #faf6f1;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Montserrat', 'Avenir Next', sans-serif;
+    background-color: #faf6f1;
+    color: #39557b;
+    scroll-behavior: smooth;
+    /* padding: 90px; */
+  }
+  
+  /* Encabezado */
+  .header {
+    background-color: var(--azul);
+    color: var(--fondo);
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  /* Secciones */
+  .section {
+    padding: 4rem 10%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    color: var(--verde-oscuro);
+    margin-bottom: 1.5rem;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section ul li,
+  .section p {
+    font-size: 1.3rem;
+    margin: 0.8rem 0;
+    color: var(--beige);
+  }
+  
+  /* Mostrar al hacer scroll */
+  .section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+ 
+  
+  /* --- RESPONSIVE DESIGN --- */
+  
+  /* Tablets */
+  @media (max-width: 992px) {
+    .section {
+      padding: 3rem 6%;
+    }
+  
+    .section h2 {
+      font-size: 2rem;
+    }
+  
+    .section ul li,
+    .section p {
+      font-size: 1.1rem;
+    }
+  
+    .header {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Móviles */
+  @media (max-width: 600px) {
+    .section {
+      padding: 2rem 5%;
+    }
+  
+    .section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .section ul li,
+    .section p {
+      font-size: 1rem;
+    }
+  
+    .header {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .whatsapp {
+      width: 50px;
+      height: 50px;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+
+  
+    /* INICIO SECCION ESPECIALISTAS */
+    /* Estilo para las cards */
+.especialistas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las cards en el contenedor */
+}
+
+.card {
+    border: 1px solid #ddd; /* Color del borde */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+    min-height: 420px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto al hacer hover */
+}
+
+.card img {
+    max-height: 250px; /* Limita la altura de las imágenes */
+   /* Asegura que la imagen se recorte bien */
+   width: 100%;
+   height: auto;
+   /* object-fit: cover; */
+   
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card .btn {
+    font-size: 0.9rem;
+    border-radius: 25px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.btn-outline-primary:hover {
+    background-color: #39557b; /* Cambia el fondo cuando el mouse está sobre el botón */
+    color: white; /* Cambia el color del texto */
+    border-color: #39557b; /* Cambia el color del borde */
+  }  
+
+  .btn-outline-primary:active {
+    background-color: transparent; /* Hace que no cambie el color de fondo al hacer clic */
+    color: white; /* Mantiene el color del texto */
+    border-color: #39557b; /* Mantiene el color del borde */
+}
+
+
+/* PRUEBA */
+
+
+
+
+/* INICIO ESTILO IMAGENES ESPECIAISTAS */
+
+
+/* FIN ESTILO IMAGENES ESPECIALISTAS */
+
+/*INICIO ESPECIALISTAS*/
+#especialistas {
+    padding: 20px;
+  }
+  
+  .especialistas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  .card {
+    border: 1px solid #ddd; /* Agrega borde si lo deseas */
+    border-radius: 8px;
+    overflow: hidden; /* Evita que el contenido se salga del borde */
+    width: 80%;
+    height: 30%;
+  }
+  
+
+  
+  /*FIN ESPECIALISTAS*/
+    /* FIN SECCION ESPECIALISTAS */
+
+    
+/* INICIO ESTILO CONTACTO */
+
+.row {
+    
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: center; /* Centra los divs en el eje horizontal */
+    gap: 40px; /* Espacio entre los elementos (ajusta según necesites) */
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas más pequeñas */
+}
+
+/* Estilo para cada div de contacto */
+.contact-info {
+    padding: 20px;
+    background-color: #f4f4f4; /* Puedes cambiar el color de fondo */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 250px; /* Ancho fijo para los divs, puedes ajustarlo */
+    text-align: center; /* Centra el contenido dentro de cada div */
+}
+
+/* Estilo para los enlaces */
+.contact-info a {
+    text-decoration: none;
+    color: #007BFF; /* Color azul para los enlaces, puedes cambiarlo */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el ratón */
+}
+
+/* FIN ESTILO CONTACTO */
+
+/* INICIO ESTILO LOGO DE WHATSAPP */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Cambio aquí: lo ponemos a la derecha */
+    z-index: 999;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-icon:hover {
+    background-color: #128c7e;
+}
+
+
+  .whatsapp-icon::after {
+    content: "¡Contáctanos!";
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+    font-size: 12px;
+    background-color: #25d366;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
+
+.whatsapp-icon:hover::after {
+    display: block;
+}
+
+/* FIN ESTILO LOGO DE WHATSAPP */
+
+/* INICIO ESTILO FOOTER */
+footer {
+    
+    background: #aea196;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  footer a {
+    text-decoration: none;  /* Elimina el subrayado */
+    color: white;           /* Cambia el color del enlace a blanco */
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer a:hover {
+    text-decoration: none;  /* Asegura que el subrayado no aparezca al pasar el mouse */
+    color: white;           /* Mantiene el color blanco al pasar el ratón */
+}
+
+  footer .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer i {
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  /* Estilos responsivos */
+  @media (max-width: 600px) {
+    footer .footer-container {
+      flex-direction: column;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  }
+
+  body, html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ footer {
+    margin-top: auto;
+ }
+
+/* FIN ESTILO FOOTER */
+
+
+/* INICIO CARDS INICIALES */
+* {
+    box-sizing: border-box;
+  }
+
+  
+
+  .card-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+    aspect-ratio: 16 / 9;
+  }
+
+  .card-image {
+    width: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease;
+  }
+
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card-container:hover .card-image {
+    filter: blur(3px);
+  }
+
+  .card-container:hover .card-overlay {
+    opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    .card-container {
+      flex-direction: column;
+      aspect-ratio: auto;
+    }
+  }
+/* FIN CARDS INICIALES */
+
+/* INICIO ESTILO CARRUSEL */
+#carouselExampleSlidesOnly {
+    max-height: 600px; /* Ajusta este valor a lo que necesites */
+    overflow: hidden;
+  }
+  
+  #carouselExampleSlidesOnly .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+/* FIN ESTILO CARRUSEL */
+
+/* PRUEBA */
+.service-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.info-card {
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-container {
+    cursor: pointer;
+}
+/* PRUEBA */
